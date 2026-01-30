@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>核心課程 | 化學實驗室 2.0</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-slate-50">
+
+    <nav class="bg-white shadow-md p-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-2 text-blue-600 font-bold text-xl">
+                <i class="fas fa-flask"></i>
+                <span>化學實驗室 2.0</span>
+            </a>
+            <div class="space-x-4 text-gray-600">
+                <a href="index.html" class="hover:text-blue-600">回首頁</a>
+                <span class="text-gray-300">|</span>
+                <span class="text-blue-600 font-bold">核心課程</span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto py-10 px-4 flex flex-col md:flex-row gap-8">
+        
+        <aside class="md:w-1/4">
+            <div class="bg-white rounded-xl shadow-sm p-6 sticky top-24">
+                <h2 class="text-lg font-bold border-b pb-4 mb-4 text-gray-800">課程選單</h2>
+                <ul class="space-y-4">
+                    <li>
+                        <button class="w-full text-left px-4 py-2 rounded-lg bg-blue-50 text-blue-600 font-bold border-l-4 border-blue-600">
+                            高一 基礎化學
+                        </button>
+                    </li>
+                    <li>
+                        <button class="w-full text-left px-4 py-2 rounded-lg text-gray-600 hover:bg-gray-100 transition">
+                            高二 基礎化學
+                        </button>
+                    </li>
+                    <li>
+                        <button class="w-full text-left px-4 py-2 rounded-lg text-gray-600 hover:bg-gray-100 transition">
+                            高三 選修化學 (上)
+                        </button>
+                    </li>
+                    <li>
+                        <button class="w-full text-left px-4 py-2 rounded-lg text-gray-600 hover:bg-gray-100 transition">
+                            高三 選修化學 (下)
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <section class="md:w-3/4">
+            <div class="flex justify-between items-end mb-8">
+                <div>
+                    <h1 class="text-3xl font-bold text-gray-900">高一 基礎化學</h1>
+                    <p class="text-gray-500 mt-2">建立化學世界的邏輯地圖，掌握物質變化的本質。</p>
+                </div>
+                <div class="text-sm text-gray-400">總共 4 個單元</div>
+            </div>
+
+            <div class="grid gap-6">
+                <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:border-blue-300 transition group">
+                    <div class="p-6 flex items-start justify-between">
+                        <div class="flex-1">
+                            <div class="flex items-center space-x-2 mb-2">
+                                <span class="bg-blue-100 text-blue-600 text-xs px-2 py-1 rounded font-bold uppercase">Unit 01</span>
+                                <span class="bg-orange-100 text-orange-600 text-xs px-2 py-1 rounded font-bold">學測重點</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800 group-hover:text-blue-600 transition">物質的組成與分離</h3>
+                            <p class="text-gray-600 mt-2 text-sm leading-relaxed">
+                                了解混合物的分離（萃取、層析）、原子模型的演進（湯姆森、拉塞福）。
+                            </p>
+                            <div class="mt-4 flex space-x-4">
+                                <span class="text-xs text-gray-400"><i class="far fa-file-alt mr-1"></i> 3 篇筆記</span>
+                                <span class="text-xs text-gray-400"><i class="fas fa-play-circle mr-1"></i> 2 支影片</span>
+                            </div>
+                        </div>
+                        <button class="bg-gray-50 text-gray-400 p-3 rounded-full hover:bg-blue-600 hover:text-white transition">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:border-blue-300 transition group">
+                    <div class="p-6 flex items-start justify-between">
+                        <div class="flex-1">
+                            <div class="flex items-center space-x-2 mb-2">
+                                <span class="bg-blue-100 text-blue-600 text-xs px-2 py-1 rounded font-bold uppercase">Unit 02</span>
+                                <span class="bg-green-100 text-green-600 text-xs px-2 py-1 rounded font-bold">必考計算</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800 group-hover:text-blue-600 transition">化學反應與計量</h3>
+                            <p class="text-gray-600 mt-2 text-sm leading-relaxed">
+                                莫耳數計算、限量試劑、產率，以及化學反應方程式的平衡。
+                            </p>
+                        </div>
+                        <button class="bg-gray-50 text-gray-400 p-3 rounded-full hover:bg-blue-600 hover:text-white transition">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-xl border border-dashed border-gray-300 p-6 flex items-center justify-center">
+                    <div class="text-center">
+                        <i class="fas fa-lock text-gray-300 text-2xl mb-2"></i>
+                        <p class="text-gray-400 text-sm font-medium">後續章節開發中，敬請期待...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
