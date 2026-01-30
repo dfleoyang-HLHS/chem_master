@@ -3,115 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>核心課程 | 化學實驗室 2.0</title>
+    <title>核心課程架構 | 化學實驗室 2.0</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .scroll-section { scroll-margin-top: 80px; }
+    </style>
 </head>
-<body class="bg-slate-50">
+<body class="bg-slate-50 font-sans">
 
-    <nav class="bg-white shadow-md p-4">
-        <div class="max-w-6xl mx-auto flex justify-between items-center">
+    <nav class="bg-white shadow-md sticky top-0 z-50 p-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
             <a href="index.html" class="flex items-center space-x-2 text-blue-600 font-bold text-xl">
                 <i class="fas fa-flask"></i>
                 <span>化學實驗室 2.0</span>
             </a>
-            <div class="space-x-4 text-gray-600">
-                <a href="index.html" class="hover:text-blue-600">回首頁</a>
-                <span class="text-gray-300">|</span>
-                <span class="text-blue-600 font-bold">核心課程</span>
-            </div>
+            <a href="index.html" class="text-gray-600 hover:text-blue-600 font-medium">回首頁</a>
         </div>
     </nav>
 
-    <main class="max-w-6xl mx-auto py-10 px-4 flex flex-col md:flex-row gap-8">
+    <div class="max-w-7xl mx-auto py-10 px-4 flex flex-col md:flex-row gap-8">
         
         <aside class="md:w-1/4">
-            <div class="bg-white rounded-xl shadow-sm p-6 sticky top-24">
-                <h2 class="text-lg font-bold border-b pb-4 mb-4 text-gray-800">課程選單</h2>
-                <ul class="space-y-4">
-                    <li>
-                        <button class="w-full text-left px-4 py-2 rounded-lg bg-blue-50 text-blue-600 font-bold border-l-4 border-blue-600">
-                            高一 基礎化學
-                        </button>
-                    </li>
-                    <li>
-                        <button class="w-full text-left px-4 py-2 rounded-lg text-gray-600 hover:bg-gray-100 transition">
-                            高二 基礎化學
-                        </button>
-                    </li>
-                    <li>
-                        <button class="w-full text-left px-4 py-2 rounded-lg text-gray-600 hover:bg-gray-100 transition">
-                            高三 選修化學 (上)
-                        </button>
-                    </li>
-                    <li>
-                        <button class="w-full text-left px-4 py-2 rounded-lg text-gray-600 hover:bg-gray-100 transition">
-                            高三 選修化學 (下)
-                        </button>
-                    </li>
-                </ul>
+            <div class="bg-white rounded-2xl shadow-sm p-6 sticky top-24 border border-gray-100">
+                <h2 class="text-lg font-bold border-b pb-4 mb-4 text-gray-800">108 課綱進度</h2>
+                <nav class="space-y-2">
+                    <a href="#basic" class="block px-4 py-2 rounded-lg bg-blue-50 text-blue-700 font-bold border-l-4 border-blue-600">高一 基礎化學全</a>
+                    <a href="#elective1" class="block px-4 py-2 rounded-lg text-gray-600 hover:bg-gray-50 transition">選修化學 I (高二上)</a>
+                    <a href="#elective2" class="block px-4 py-2 rounded-lg text-gray-600 hover:bg-gray-50 transition">選修化學 II (高二下)</a>
+                    <a href="#elective3" class="block px-4 py-2 rounded-lg text-gray-600 hover:bg-gray-50 transition">選修化學 III (高三上)</a>
+                    <a href="#elective4" class="block px-4 py-2 rounded-lg text-gray-600 hover:bg-gray-50 transition">選修化學 IV (高三上/下)</a>
+                    <a href="#elective5" class="block px-4 py-2 rounded-lg text-gray-600 hover:bg-gray-50 transition">選修化學 V (高三下)</a>
+                </nav>
             </div>
         </aside>
 
-        <section class="md:w-3/4">
-            <div class="flex justify-between items-end mb-8">
-                <div>
-                    <h1 class="text-3xl font-bold text-gray-900">高一 基礎化學</h1>
-                    <p class="text-gray-500 mt-2">建立化學世界的邏輯地圖，掌握物質變化的本質。</p>
+        <div class="md:w-3/4 space-y-12">
+            
+            <section id="elective1" class="scroll-section">
+                <div class="flex items-center space-x-3 mb-6">
+                    <span class="bg-yellow-500 text-white px-3 py-1 rounded-md font-bold text-sm">選化 I</span>
+                    <h2 class="text-2xl font-bold text-gray-800">物質與能量</h2>
                 </div>
-                <div class="text-sm text-gray-400">總共 4 個單元</div>
-            </div>
-
-            <div class="grid gap-6">
-                <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:border-blue-300 transition group">
-                    <div class="p-6 flex items-start justify-between">
-                        <div class="flex-1">
-                            <div class="flex items-center space-x-2 mb-2">
-                                <span class="bg-blue-100 text-blue-600 text-xs px-2 py-1 rounded font-bold uppercase">Unit 01</span>
-                                <span class="bg-orange-100 text-orange-600 text-xs px-2 py-1 rounded font-bold">學測重點</span>
-                            </div>
-                            <h3 class="text-xl font-bold text-gray-800 group-hover:text-blue-600 transition">物質的組成與分離</h3>
-                            <p class="text-gray-600 mt-2 text-sm leading-relaxed">
-                                了解混合物的分離（萃取、層析）、原子模型的演進（湯姆森、拉塞福）。
-                            </p>
-                            <div class="mt-4 flex space-x-4">
-                                <span class="text-xs text-gray-400"><i class="far fa-file-alt mr-1"></i> 3 篇筆記</span>
-                                <span class="text-xs text-gray-400"><i class="fas fa-play-circle mr-1"></i> 2 支影片</span>
-                            </div>
-                        </div>
-                        <button class="bg-gray-50 text-gray-400 p-3 rounded-full hover:bg-blue-600 hover:text-white transition">
-                            <i class="fas fa-chevron-right"></i>
-                        </button>
+                <div class="grid md:grid-cols-3 gap-4">
+                    <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-100">
+                        <h4 class="font-bold text-blue-600 mb-2">CH1 物質鑑定與反應</h4>
+                        <p class="text-sm text-gray-500">原子量與莫耳數、反應熱性質。</p>
+                    </div>
+                    <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-100">
+                        <h4 class="font-bold text-blue-600 mb-2">CH2 氣體</h4>
+                        <p class="text-sm text-gray-500">氣體定律、理想氣體方程式。</p>
+                    </div>
+                    <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-100">
+                        <h4 class="font-bold text-blue-600 mb-2">CH3 溶液</h4>
+                        <p class="text-sm text-gray-500">溶液性質、拉午耳定律。</p>
                     </div>
                 </div>
+                <div class="mt-4 bg-yellow-50 p-3 rounded-lg border border-yellow-100">
+                    <p class="text-xs text-yellow-700 font-bold"><i class="fas fa-microscope mr-2"></i>課綱實驗：反應熱測量、凝固點下降實驗。</p>
+                </div>
+            </section>
 
-                <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:border-blue-300 transition group">
-                    <div class="p-6 flex items-start justify-between">
-                        <div class="flex-1">
-                            <div class="flex items-center space-x-2 mb-2">
-                                <span class="bg-blue-100 text-blue-600 text-xs px-2 py-1 rounded font-bold uppercase">Unit 02</span>
-                                <span class="bg-green-100 text-green-600 text-xs px-2 py-1 rounded font-bold">必考計算</span>
-                            </div>
-                            <h3 class="text-xl font-bold text-gray-800 group-hover:text-blue-600 transition">化學反應與計量</h3>
-                            <p class="text-gray-600 mt-2 text-sm leading-relaxed">
-                                莫耳數計算、限量試劑、產率，以及化學反應方程式的平衡。
-                            </p>
-                        </div>
-                        <button class="bg-gray-50 text-gray-400 p-3 rounded-full hover:bg-blue-600 hover:text-white transition">
-                            <i class="fas fa-chevron-right"></i>
-                        </button>
+            <section id="elective2" class="scroll-section">
+                <div class="flex items-center space-x-3 mb-6">
+                    <span class="bg-orange-500 text-white px-3 py-1 rounded-md font-bold text-sm">選化 II</span>
+                    <h2 class="text-2xl font-bold text-gray-800">物質構造與反應速率</h2>
+                </div>
+                <div class="grid md:grid-cols-3 gap-4">
+                    <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-100">
+                        <h4 class="font-bold text-blue-600 mb-2">CH1 原子構造</h4>
+                        <p class="text-sm text-gray-500">原子軌域、電子組態。</p>
+                    </div>
+                    <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-100">
+                        <h4 class="font-bold text-blue-600 mb-2">CH2 化學鍵結</h4>
+                        <p class="text-sm text-gray-500">價鍵理論、分子間作用力。</p>
+                    </div>
+                    <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-100">
+                        <h4 class="font-bold text-blue-600 mb-2">CH3 反應速率</h4>
+                        <p class="text-sm text-gray-500">反應速率定律、碰撞學說。</p>
                     </div>
                 </div>
+            </section>
 
-                <div class="bg-gray-50 rounded-xl border border-dashed border-gray-300 p-6 flex items-center justify-center">
-                    <div class="text-center">
-                        <i class="fas fa-lock text-gray-300 text-2xl mb-2"></i>
-                        <p class="text-gray-400 text-sm font-medium">後續章節開發中，敬請期待...</p>
+            <section id="elective5" class="scroll-section">
+                <div class="flex items-center space-x-3 mb-6 border-t pt-10">
+                    <span class="bg-purple-600 text-white px-3 py-1 rounded-md font-bold text-sm">選化 V</span>
+                    <h2 class="text-2xl font-bold text-gray-800">有機化學與應用科技</h2>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-purple-500">
+                        <h4 class="font-bold text-gray-800 mb-3 text-lg">有機化合物與聚合物</h4>
+                        <ul class="text-sm text-gray-600 space-y-2">
+                            <li>• 烴類、醇、酚、醚、醛、酮</li>
+                            <li>• 羧酸與酯、胺與醯胺</li>
+                            <li>• 生物體中的大分子</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-purple-500">
+                        <h4 class="font-bold text-gray-800 mb-3 text-lg">化學與化工應用</h4>
+                        <ul class="text-sm text-gray-600 space-y-2">
+                            <li>• 先進材料與環境檢測</li>
+                            <li>• 能源與化學永續</li>
+                            <li>• 實驗：製備阿司匹靈</li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-        </section>
-    </main>
+            </section>
+
+        </div>
+    </div>
+
+    <footer class="bg-gray-800 text-white py-12 mt-20">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="opacity-70 font-light">依據高中化學 108 課綱編輯</p>
+        </div>
+    </footer>
 
 </body>
 </html>
